@@ -1,5 +1,5 @@
 {% set name = 'glacier_lengths' %}
-{% set version = '0.0.4' %}
+{% set version = '0.1.2' %}
 
 package:
   name: '{{ name | lower }}'
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/erikmannerfelt/glacier_lengths/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 93843906e15d5bbe1b8a7e457c75d1bbe6fc5ea3ccc9fc5e3229c4f9a563d186
+  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 
 build:
   number: 0
