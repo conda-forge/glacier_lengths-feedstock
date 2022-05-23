@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/erikmannerfelt/glacier_lengths/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  sha256: 5116efbaeef873cd56db32bd7ad7188bafa7a98336a6471b0169bcd5d2aa3e11
 
 build:
   number: 0
