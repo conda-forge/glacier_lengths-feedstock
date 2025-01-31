@@ -1,5 +1,5 @@
-{% set name = 'glacier_lengths' %}
-{% set version = '0.1.2' %}
+{% set name = "glacier_lengths" %}
+{% set version = "0.1.2" %}
 
 package:
   name: '{{ name | lower }}'
@@ -10,24 +10,26 @@ source:
   sha256: 5116efbaeef873cd56db32bd7ad7188bafa7a98336a6471b0169bcd5d2aa3e11
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: '{{ PYTHON }} -m pip install . -vv'
 
 requirements:
   host:
-  - python >=3.7
-  - pip
-  - shapely
-  - numpy
+    - python {{ python_min }}
+    - pip
+    - shapely
+    - numpy
   run:
-  - python >=3.7
-  - shapely
-  - numpy
+    - python >={{ python_min }}
+    - shapely
+    - numpy
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
-  - glacier_lengths
+    - glacier_lengths
 
 about:
   home: https://github.com/erikmannerfelt/glacier_lengths
@@ -39,4 +41,4 @@ about:
 
 extra:
   recipe-maintainers:
-  - erikmannerfelt
+    - erikmannerfelt
